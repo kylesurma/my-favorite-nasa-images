@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import styles from '../styles/Home.module.css'
-
 // import Link from "next/Link";
 import { NextLinkComposed } from "../src/Link";
 
@@ -21,10 +20,9 @@ function LinkTab(props) {
 
 export default function NavTabs() {
   const [value, setValue] = useState(0);
-
+  
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    console.log("test ", value);
   };
 
   return (

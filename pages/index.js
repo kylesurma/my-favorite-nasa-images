@@ -5,7 +5,7 @@ import Link from "next/link"
 import Button from '@mui/material/Button';
 import { useDispatch, useSelector } from 'react-redux'
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const res = await fetch(
     `https://api.nasa.gov/planetary/apod?api_key=${process.env.NASA_TOKEN}&count=10`
   );

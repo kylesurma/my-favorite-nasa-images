@@ -15,7 +15,7 @@ export default function MyFavorites() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className={styles.main}>
-          {favorites ? <Typography> You have no favorites!</Typography> : favorites.map((image) => {
+          {!favorites.length ? <Typography> You have no favorites!</Typography> : favorites.map((image) => {
             const { title, url, hdurl, desc, date } = image;
             return (
               <div key={url} className={styles.card}>

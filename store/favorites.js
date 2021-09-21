@@ -20,7 +20,7 @@ const favoriteImagesSlice = createSlice({
       state.images = state.images.filter(
         (image) => image.url !== action.payload
       );
-      delete state.memo[action.payload]
+      delete state.memo[action.payload];
     },
   },
 });

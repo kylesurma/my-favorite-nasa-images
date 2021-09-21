@@ -4,9 +4,9 @@ import { Provider } from "react-redux";
 import store, { getFavoritesFromLocalStorage } from "../store";
 import { hydrate } from "../store/favorites";
 
-const favorites = getFavoritesFromLocalStorage()
-if(favorites){
-  store.dispatch(hydrate(favorites))
+const favorites = getFavoritesFromLocalStorage();
+if (favorites) {
+  store.dispatch(hydrate(favorites));
 }
 
 function MyApp({ Component, pageProps }) {

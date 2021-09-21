@@ -15,7 +15,7 @@ export default function PictureCard(props) {
   const favorited = memo[url];
 
   const handleClick = (event, image) => {
-    console.log(image.url)
+    console.log(image.url);
     if (favorited) {
       dispatch(removeFavorite(image.url));
     } else {
